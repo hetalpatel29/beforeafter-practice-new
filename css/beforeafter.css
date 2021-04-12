@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box1 {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    background-image: url(../image/Website-Background-Images-HD-Free-Download-Wallpaperxyz.com-11.jpg);
+    background-size: cover;
+    background-position: 300px 300px;
+    float: left;
+    margin-top: 50px;
+}
+
+.box1::before,
+.box1::after {
+    position: absolute;
+    content: '';
+    transition: all 0.4s ease-out;
+    top: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    transition: 2s;
+}
+
+.box1::before {
+    background-size: cover;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    transform: scale(0, 1);
+}
+
+.box1::after {
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    transform: scale(1, 0);
+}
+
+.box1:hover::before {
+    background: rgba(0, 0, 0, 0.315);
+    transform: scale(1.10, 1);
+}
+
+.box1:hover::after {
+    /* background: rgba(0, 0, 0, 0.315); */
+    transform: scale(1, 1.10);
+}
+
+.box2 {
+    float: left;
+    position: relative;
+    height: 300px;
+    width: 300px;
+    background-image: url(../image/Website-Background-Images-HD-Free-Download-Wallpaperxyz.com-11.jpg);
+    background-size: cover;
+    background-position: 300px 300px;
+    overflow: hidden;
+    margin: 0px 20px;
+    margin-top: 50px;
+}
+
+.box2::before {
+    height: 0px;
+    position: absolute;
+    content: '';
+    left: -100%;
+    top: 0px;
+    transition: 5s;
+}
+
+.box2:hover::before {
+    height: 300px;
+    width: 300px;
+    border-radius: 0px 200px 200px 0px;
+    background-color: rgba(0, 0, 0, 0.39);
+    right: 0px;
+    left: 0px;
+    top: 0px;
+}
+
+.box2::after {
+    height: 0px;
+    position: absolute;
+    content: '';
+    right: -100%;
+    top: 0px;
+    transition: 5s;
+}
+
+.box2:hover::after {
+    height: 300px;
+    width: 300px;
+    border-radius: 200px 0px 0px 200px;
+    background-color: rgba(0, 0, 0, 0.39);
+    right: 0px;
+    top: 0px;
+}
+
+.box3 {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    background-image: url(../image/Website-Background-Images-HD-Free-Download-Wallpaperxyz.com-11.jpg);
+    float: left;
+    background-size: cover;
+    background-position: 300px 300px;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.box3::before {
+    content: '';
+    height: 50px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.226);
+    position: absolute;
+    transition: 1s;
+    bottom: 100%;
+    right: 100%;
+}
+
+.box3:hover::before {
+    bottom: 0;
+    right: 0%;
+}
+
+.box4 {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    background-image: url(../image/Website-Background-Images-HD-Free-Download-Wallpaperxyz.com-11.jpg);
+    float: left;
+    background-size: cover;
+    background-position: 300px 300px;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.box4::after {
+    content: '';
+    height: 300px;
+    width: 150px;
+    position: absolute;
+    box-sizing: border-box;
+    left: 100%;
+    transition: 1s;
+}
+
+.box4:hover::after {
+    border: 5px solid rgba(63, 3, 3, 0.363);
+    background-image: url(../image/btrKhH.jpg);
+    background-size: inherit;
+    background-position: top center;
+    background-clip: content-box;
+    border-right: none;
+    left: 0;
+}
+
+.box4::before {
+    content: '';
+    height: 300px;
+    width: 150px;
+    position: absolute;
+    box-sizing: border-box;
+    right: 100%;
+    transition: 1s;
+}
+
+.box4:hover::before {
+    border: 5px solid rgba(63, 3, 3, 0.445);
+    background-image: url(../image/Free-high-quality-images-to-be-used-as-illustration-on-your-site-8.jpg);
+    background-size: inherit;
+    background-position: top center;
+    background-clip: content-box;
+    right: 0;
+}
